@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../img/logo.png"
 import { Navbar, Nav } from 'rsuite';
 import HomeIcon from '@rsuite/icons/legacy/Home';
 import CogIcon from '@rsuite/icons/legacy/Cog';
@@ -7,9 +8,9 @@ export default function NavBar(){
 
     return(
         <Navbar>
-        <Navbar.Brand href="#">FUDO</Navbar.Brand>
+        <Navbar.Brand href="#"><img src={logo} height={25}/></Navbar.Brand>
         <Nav>
-          <Nav.Item icon={<HomeIcon />}>Home</Nav.Item>
+          <Nav.Item>Home</Nav.Item>
           <Nav.Item>Services</Nav.Item>
           <Nav.Item>Menu</Nav.Item>
           <Nav.Menu title="About">
