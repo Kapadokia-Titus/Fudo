@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Row, Col } from 'rsuite';
+import { Carousel,Popover } from 'rsuite';
 import Card from "../components/Card";
 
 const styles ={
@@ -20,6 +20,12 @@ export default function Home(){
             <img  src="https://cdn.pixabay.com/photo/2022/04/30/19/12/cooking-banner-7166200__340.jpg" height="250" />
             <img  src="https://thumbs.dreamstime.com/b/spices-herbs-various-condiments-around-plate-white-stone-table-top-view-banner-healthy-cooking-indian-food-background-195414183.jpg" height="250" />
         </Carousel>
+        <div style={{ height: 200, position: 'relative', "margin-top":40, "text-align":"center"}}>
+            
+            <h3> Choose a healthy lifestyle, by following a <span style={{ "color":"#EB5757"}}>Personalised Meal Plan</span> </h3>
+            <p>“Fudo is the best. Besides the many and delicious meals, the service is also very good, especially in the very  fast delivey. I highly recommend Fudo  to you”.</p>
+           
+        </div>
 
         <Card />
         <Card />

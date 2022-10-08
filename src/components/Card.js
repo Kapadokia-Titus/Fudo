@@ -28,7 +28,7 @@ export default function Card(){
                 </small>
             </p>
 
-            <AvatarGroup stack>
+            <AvatarGroup stack  style={{ "margin-top":30}}>
             {users
                 .filter((user, i) => i < max)
                 .map(user => (
