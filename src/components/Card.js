@@ -35,7 +35,7 @@ export default function Card(){
                 <Avatar  style={{ height:30, width:30}} circle key={user.name} src={user.avatar} alt={user.name} />
                 ))}
             <Avatar circle style={{ background: '#111', height:30, width:30}}>
-                +{users.length - max}
+            <h6 >+{users.length - max}</h6>
             </Avatar>
             </AvatarGroup>
 
