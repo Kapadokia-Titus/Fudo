@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'marrienda'; /*a name to be used later*/
+    src: url('./img/Merienda-Bold.ttf'); /*URL to font*/
+
+    font-family: 'classic'; 
+    src: url('./img/ClassicRootsPersonalUseRegular-8MwDZ.ttf');
+
+    font-family: 'tomato'; 
+    src: url('./img/TomatoSoupPersonalUseItalic-lgORe.ttf');
+}

@@ -12,22 +12,22 @@ const users = [
   { avatar: 'https://avatars.githubusercontent.com/u/23637144', name: 'Sleaf' }
 ];
 
-const max = 5;
+const max = 4;
 
-export default function Card(){
+export default function Card({desc, title, img }){
 
     return(
 
         
         <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 240, margin:5 }}>
-            <img src="https://via.placeholder.com/240x240" height="240" />
-            <Panel header="Recipe Type">
+            <img src={img} height="240" width={240} style={{ backgroundSize: "cover"}}/>
+            <Panel header={title}>
             <p>
                 <small>
-                A suite of React components, sensible UI design, and a friendly development experience.
+                {desc}
                 </small>
             </p>
-
+            <hr/>
             <AvatarGroup stack  style={{ "margin-top":30}}>
             {users
                 .filter((user, i) => i < max)
@@ -39,8 +39,8 @@ export default function Card(){
             </Avatar>
             </AvatarGroup>
 
-
             </Panel>
         </Panel>
     )
 }
+
