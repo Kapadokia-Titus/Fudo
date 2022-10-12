@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /api
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/dachefdb
+    username: postgres
+    password: pass
+    pool-size: 30
