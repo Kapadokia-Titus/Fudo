@@ -3,6 +3,7 @@ package kapadokia.nyandoro.food.repository;
 import kapadokia.nyandoro.food.model.Meal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -24,7 +25,12 @@ public class MealRepository {
                 "FROM meal";
         // return a list of meals from JDBC
         // the jdbcTemplate takes in the sql query, fetches that data and return's to us as a java object format
-        return jdbcTemplate.query(sql, (resultSet, i)->{
+        return jdbcTemplate.query(sql, mapMealsFromDb());
+
+    }
+
+    private static RowMapper<Meal> mapMealsFromDb() {
+        return (resultSet, i) -> {
 
             // get id from the result set
             String mealIdStr = resultSet.getString("meal_id");
@@ -40,7 +46,6 @@ public class MealRepository {
 
             // return the meal data
             return new Meal(mealId, mealTitle, mealDescription, mealImage, mealIngredients, mealCookingTime);
-        });
-
+        };
     }
 }
