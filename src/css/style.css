@@ -755,6 +755,39 @@ header .icons div:hover {
   padding: 1rem 0;
   line-height: 2;
 }
+.admin{
+  background-color: #fff;
+}
+.admin form {
+  margin: 1rem auto;
+  display: flex;
+  text-align: center;
+}
+.admin form input[type=text] {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #585760;
+  background-color: #f7f7f7;
+  text-transform: none;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.admin form input[type=submit] {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  background-color: #EB5757;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.admin form input[type=submit]:hover {
+  background-color: #130f40;
+}
+
+
 
 .footer {
   background-color: #f7f7f7;
@@ -764,6 +797,7 @@ header .icons div:hover {
   font-size: 2.5rem;
   color: #130f40;
 }
+
 .footer form {
   margin: 1rem auto;
   max-width: 70rem;
@@ -880,6 +914,9 @@ header .icons div:hover {
     font-size: 2rem;
     margin: 2rem;
     display: block;
+  }
+  .header .input-group input{
+  background-color: #a09b9b;
   }
   .home .right-side .home-parallax {
     top: 0;

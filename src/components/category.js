@@ -9,29 +9,29 @@ import image6 from '../img/cat/cat-6.png'
 export default function Category(){
 
     return(
-        <section class="category">
+        <section className="category">
 
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image1} alt=""/>
             <h3>Combo</h3>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image2} alt=""/>
             <h3>Pizza</h3>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image3} alt=""/>
             <h3>Burger</h3>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image4}  alt=""/>
             <h3>Chicken</h3>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image5} alt=""/>
             <h3>Dinner</h3>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={image6} alt=""/>
             <h3>Coffee</h3>
         </a>

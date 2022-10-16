@@ -1,46 +1,50 @@
 import '../css/style.css'
 export default function Footer(){
 
+
+    function handleSubscriberSubmit(e){
+        e.preventDefault();
+    }
     return(
-        <footer class="footer">
+        <footer className="footer">
 
         <section>
 
-            <h3 class="Newsletter">Newsletter</h3>
+            <h3 className="Newsletter">Newsletter</h3>
 
-            <form action="">
+            <form onSubmit={handleSubscriberSubmit}>
                 <input type="email" placeholder="enter your email"/>
                 <input type="submit" value="subscribe"/>
             </form>
 
-            <div class="box-container">
-                <div class="box">
+            <div className="box-container">
+                <div className="box">
                     <h3>our menu</h3>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> pizza</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> burger</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> chicken</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> pasta</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> and more...</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> pizza</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> burger</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> chicken</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> pasta</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> and more...</a>
 
                 </div>
-                <div class="box">
+                <div className="box">
                     <h3>quick links</h3>
-                    <a href="#home"> <i class="fas fa-arrow-right"></i> Home</a>
-                    <a href="#about"> <i class="fas fa-arrow-right"></i> About</a>
-                    <a href="#popular"> <i class="fas fa-arrow-right"></i> Popular</a>
-                    <a href="#menu"> <i class="fas fa-arrow-right"></i> Menu</a>
-                    <a href="#order"> <i class="fas fa-arrow-right"></i> Order</a>
-                    <a href="#blogs"> <i class="fas fa-arrow-right"></i> Blogs</a>
+                    <a href="#home"> <i className="fas fa-arrow-right"></i> Home</a>
+                    <a href="#about"> <i className="fas fa-arrow-right"></i> About</a>
+                    <a href="#popular"> <i className="fas fa-arrow-right"></i> Popular</a>
+                    <a href="#menu"> <i className="fas fa-arrow-right"></i> Menu</a>
+                    <a href="#order"> <i className="fas fa-arrow-right"></i> Order</a>
+                    <a href="#blogs"> <i className="fas fa-arrow-right"></i> Blogs</a>
                 </div>
-                <div class="box">
+                <div className="box">
                     <h3>extra links</h3>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
-                    <a href="#"> <i class="fas fa-arrow-right"></i> policy</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> my order</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> my account</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> my favorite</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> terms of use</a>
+                    <a href="#"> <i className="fas fa-arrow-right"></i> policy</a>
                 </div>
-                <div class="box">
+                <div className="box">
                     <h3>opening hours</h3>
                     <p>Monday : 7:00am To 10:00pm</p>
                     <p>Tuesday : 7:00am To 10:00pm</p>
@@ -50,15 +54,15 @@ export default function Footer(){
                 </div>
             </div>
 
-            <div class="bottom">
-                <div class="social">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
+            <div className="bottom">
+                <div className="social">
+                    <a href="#" className="fab fa-facebook-f"></a>
+                    <a href="#" className="fab fa-twitter"></a>
+                    <a href="#" className="fab fa-instagram"></a>
+                    <a href="#" className="fab fa-linkedin"></a>
+                    <a href="#" className="fab fa-pinterest"></a>
                 </div>
-                <div class="copy-right">
+                <div className="copy-right">
                     <p>All Rights Reserved!</p>
                 </div>
             </div>

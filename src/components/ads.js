@@ -15,40 +15,40 @@ export default function AdSection(){
 
         <>
 
-<section class="banner">
+<section className="banner">
 
-    <div class="row-banner">
-        <div class="content">
+    <div className="row-banner">
+        <div className="content">
             <span>Double Cheese</span>
             <h3>BURGER</h3>
             <p>With Cococola And Fries</p>
-            <a href="#" class="btn">Order Now</a>
+            <a href="#" className="btn">Order Now</a>
         </div>
     </div>
 
-    <div class="grid-banner">
-        <div class="grid">
+    <div className="grid-banner">
+        <div className="grid">
             <img src={banner1}alt=""/>
-            <div class="content">
+            <div className="content">
                 <span>Special Offer</span>
                 <h3>Upto 50% Off</h3>
-                <a href="#" class="btn">Order Now</a>
+                <a href="#" className="btn">Order Now</a>
             </div>
         </div>
-        <div class="grid ">
+        <div className="grid ">
             <img src={banner2} alt=""/>
-            <div class="content center">
+            <div className="content center">
                 <span>Special Offer</span>
                 <h3>Upto 50% Off</h3>
-                <a href="#" class="btn">Order Now</a>
+                <a href="#" className="btn">Order Now</a>
             </div>
         </div>
-        <div class="grid">
+        <div className="grid">
             <img src={banner3} alt=""/>
-            <div class="content">
+            <div className="content">
                 <span>Special Offer</span>
                 <h3>Upto 50% Off</h3>
-                <a href="#" class="btn">Order Now</a>
+                <a href="#" className="btn">Order Now</a>
             </div>
         </div>
     </div>
@@ -56,54 +56,54 @@ export default function AdSection(){
 </section>
 
 {/* Menu */}
-<section class="menu" id="menu">
+<section className="menu" id="menu">
 
-    <div class="heading">
+    <div className="heading">
         <span>Our Menu</span>
         <h3>Our Top Dishes</h3>
     </div>
 
-    <div class="box-container">
-        <a href="#" class="box">
+    <div className="box-container">
+        <a href="#" className="box">
             <img src={menu1} alt=""/>
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={menu2} alt=""/>
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={menu3} alt=""/>
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={menu4} alt=""/>
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={menu5} alt=""/>
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
-        <a href="#" class="box">
+        <a href="#" className="box">
             <img src={menu6} alt="" />
-            <div class="content">
+            <div className="content">
                 <h3>Delicious Food</h3>
-                <span class="price">$40.00</span>
+                <span className="price">$40.00</span>
             </div>
         </a>
     </div>

@@ -44,14 +44,14 @@ export default function Home(){
 
         {/* product grid */}
 
-        <section class="blog" id="blog">
+        <section className="blog" id="blog">
     
-            <div class="heading">
+            <div className="heading">
                 <span>Start Cooking</span>
                 <h3>Our Daily Recommendations</h3>
             </div>
     
-            <div class="blog-container">
+            <div className="blog-container">
             {meals?.map(data=>(
                     <RecipeCard key={data.mealId} desc={data.mealDescription} title={data.mealTitle} img={data.mealImage}/>
                 ))}
@@ -63,8 +63,7 @@ export default function Home(){
         {/* Ad section */}
         <AdSection />
         
-        {/* Footer */}
-        <Footer />
+       
         
         </>
     )
