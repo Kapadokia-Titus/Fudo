@@ -1,0 +1,1 @@
+ALTER TABLE users ADD user_image VARCHAR(300) NOT NULL
