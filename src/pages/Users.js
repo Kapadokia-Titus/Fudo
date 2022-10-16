@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import { Table } from 'rsuite';
 import { getAllUsers } from '../client/Client';
+import { AddUser } from '../components/AddUser';
 import Container from '../components/Container';
 
 const { Column, HeaderCell, Cell } = Table;
@@ -66,9 +67,11 @@ export default function Users(){
         </Cell>
       </Column>
     </Table>
-       </Container>
 
-    // footer section
+     {/* add users section */}
+    <AddUser />
+ </Container>
+
     
     )
 }
