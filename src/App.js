@@ -8,7 +8,7 @@ import Admin from './pages/Admin';
 import Order from './pages/Order';
 import Popular from './pages/Popular';
 import Recipe from './pages/Recipes';
-import Shop from './pages/Shop';
+import Discover from './pages/Discover';
 import Users from './pages/Users';
 import Footer from './components/Footer';
 
@@ -20,7 +20,7 @@ function App() {
       <Route path='/' element={<Home />}/>
       <Route path='/admin' element={<Admin />}/>
       <Route path='/order' element={<Order />}/>
-      <Route path='/shop' element={<Shop />}/>
+      <Route path='/discover' element={<Discover />}/>
       <Route path='/recipe' element={<Recipe />}/>
       <Route path='/popular' element={<Popular />}/>
       <Route path='/users' element={<Users />}/>

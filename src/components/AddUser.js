@@ -1,11 +1,17 @@
-import { Modal, Form, Button, Input, SelectPicker } from 'rsuite';
+import { Modal, Form, Button, Input, SelectPicker,Schema } from 'rsuite';
 import {useState, forwardRef} from 'react';
+//selector
 const selectData = ['MALE', 'FEMALE'].map(item => ({
     label: item,
     value: item
   }));
   
   const Textarea = forwardRef((props, ref) => <Input {...props} as="textarea" ref={ref} />);
+
+  //input validation:: validating if fields are empty or are filled correctly
+  const nameRule = Schema.Types.StringType().isRequired('This fields is required'); 
+  const emailRule = Schema.Types.StringType().isEmail('Please Enter A valid Email Address'); 
+
 
 
 
@@ -40,28 +46,30 @@ export const AddUser = () => {
         <Form fluid onChange={setFormValue} formValue={formValue}>
             <Form.Group controlId="name-9">
               <Form.ControlLabel>First Name</Form.ControlLabel>
-              <Form.Control name="name" />
+              <Form.Control name="fname" rule={nameRule} />
               <Form.HelpText>Required</Form.HelpText>
             </Form.Group>
-            <Form.Group controlId="name-9">
+            <Form.Group controlId="name-10">
               <Form.ControlLabel>Last Name</Form.ControlLabel>
-              <Form.Control name="name" />
+              <Form.Control name="lname"  rule={nameRule}/>
               <Form.HelpText>Required</Form.HelpText>
             </Form.Group>
             <Form.Group controlId="email-9">
               <Form.ControlLabel>Email</Form.ControlLabel>
-              <Form.Control name="email" type="email" />
+              <Form.Control name="email" rule={emailRule} type="email" />
               <Form.HelpText>Required</Form.HelpText>
             </Form.Group>
-            <Form.Group controlId="password-9">
+            <Form.Group controlId="img-9">
               <Form.ControlLabel>Image Url</Form.ControlLabel>
-              <Form.Control name="password" type="password" autoComplete="off" />
+              <Form.Control name="url" rule={nameRule} type="text" autoComplete="off" />
             </Form.Group>
             <Form.Group controlId="select-10">
               <Form.ControlLabel>Gender</Form.ControlLabel>
               <Form.Control name="select" data={selectData} accepter={SelectPicker} />
             </Form.Group>
-            
+            <Button appearance="primary" type="submit">
+                Submit
+            </Button>
           </Form>
 
         </Modal.Body>
